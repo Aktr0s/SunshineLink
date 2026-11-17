@@ -42,7 +42,6 @@ namespace Sun6502IDE
         // =====================================================================
         private void MainForm_Load(object sender, EventArgs e)
         {
-            term.Scanlines = miScanlines.Checked;
             cmbFlow.SelectedIndex = 1;
             cmbEol.SelectedIndex = 0;
             RefreshPorts();
@@ -649,11 +648,6 @@ namespace Sun6502IDE
             {
                 f.ShowDialog(this);
             }
-        }
-
-        private void miScanlines_Click(object sender, EventArgs e)
-        {
-            term.Scanlines = miScanlines.Checked;
         }
 
     }

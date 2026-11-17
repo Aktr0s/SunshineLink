@@ -45,7 +45,6 @@
             this.sepOpt = new System.Windows.Forms.ToolStripSeparator();
             this.miCrNl = new System.Windows.Forms.ToolStripMenuItem();
             this.miBsDel = new System.Windows.Forms.ToolStripMenuItem();
-            this.miScanlines = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miHelpBasic = new System.Windows.Forms.ToolStripMenuItem();
             this.miHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +76,7 @@
             this.split = new System.Windows.Forms.SplitContainer();
             this.editor = new System.Windows.Forms.TextBox();
             this.hCode = new System.Windows.Forms.Label();
-            this.term = new Sun6502IDE.CrtTextBox();
+            this.term = new System.Windows.Forms.TextBox();
             this.termMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.miCtxCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.miCtxClear = new System.Windows.Forms.ToolStripMenuItem();
@@ -171,8 +170,7 @@
             this.miRun,
             this.sepOpt,
             this.miCrNl,
-            this.miBsDel,
-            this.miScanlines});
+            this.miBsDel});
             this.mOpt.Name = "mOpt";
             this.mOpt.Size = new System.Drawing.Size(61, 20);
             this.mOpt.Text = "&Options";
@@ -225,14 +223,6 @@
             this.miBsDel.Name = "miBsDel";
             this.miBsDel.Size = new System.Drawing.Size(297, 22);
             this.miBsDel.Text = "Backspace key sends &DEL ($7F)";
-            // 
-            // miScanlines
-            // 
-            this.miScanlines.CheckOnClick = true;
-            this.miScanlines.Name = "miScanlines";
-            this.miScanlines.Size = new System.Drawing.Size(297, 22);
-            this.miScanlines.Text = "CRT Scanlines (Terminal)";
-            this.miScanlines.Click += new System.EventHandler(this.miScanlines_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -671,8 +661,7 @@
         private System.Windows.Forms.SplitContainer split;
         private System.Windows.Forms.TextBox editor;
         private System.Windows.Forms.Label hCode;
-        //private System.Windows.Forms.TextBox term;
-        private Sun6502IDE.CrtTextBox term;
+        private System.Windows.Forms.TextBox term;
         private System.Windows.Forms.Label hTerm;
         private System.Windows.Forms.ContextMenuStrip termMenu;
         private System.Windows.Forms.ToolStripMenuItem miCtxCopy;
@@ -681,6 +670,5 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miHelpBasic;
         private System.Windows.Forms.ToolStripMenuItem miHelpAbout;
-        private System.Windows.Forms.ToolStripMenuItem miScanlines;
     }
 }
